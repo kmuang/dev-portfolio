@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Khup Muang KM logo</title>
+  <desc id="desc">A dark circular KM developer logo with blue K, white M, and code brackets.</desc>
+  <defs>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#28b7ff"/>
+      <stop offset="1" stop-color="#0877e8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+  <circle cx="256" cy="256" r="238" fill="#06122a"/>
+  <circle cx="256" cy="256" r="238" fill="none" stroke="#102245" stroke-width="8"/>
+  <g filter="url(#softShadow)">
+    <path fill="url(#blue)" d="M86 153h46v91l88-91h57L169 264l124 132h-60L132 286v110H86z"/>
+    <path fill="#fff" d="M239 259l79 91 87-91v137h47V153h-47l-87 91-47-54z"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="20" filter="url(#softShadow)">
+    <path d="M222 118l-42 39 42 39" stroke="#fff"/>
+    <path d="M336 118l42 39-42 39" stroke="#fff"/>
+    <path d="M289 105l-22 105" stroke="url(#blue)"/>
+  </g>
+</svg>
