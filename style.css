@@ -1058,6 +1058,12 @@
             .hero {
                 grid-template-columns: 1fr;
                 text-align: center;
+            }a
+
+            .hero p {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
             }
 
             .skills-grid,
