@@ -781,8 +781,8 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            padding: 42px;
+            gap: 30px;
+            padding: 60px;
             background:
                 linear-gradient(145deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.025)),
                 rgba(255, 255, 255, 0.035);
@@ -818,7 +818,7 @@
             background: rgba(0, 0, 0, 0.18);
             border: 1px solid rgba(255, 255, 255, 0.14);
             border-radius: var(--radius-sm);
-            padding: 19px 20px;
+            padding: 24px 26px;
             font-size: 16px;
             font-family: 'Space Grotesk', sans-serif;
             color: var(--text-white);
@@ -856,7 +856,7 @@
 
         .form-group textarea {
             resize: vertical;
-            min-height: 128px;
+            min-height: 172px;
         }
 
         .btn-submit {
@@ -1392,6 +1392,16 @@
             .contact-container {
                 grid-template-columns: 1fr;
                 gap: 60px;
+            }
+
+            .contact-form {
+                gap: 24px;
+                padding: 38px 28px;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                padding: 19px 20px;
             }
 
             .section-header {
