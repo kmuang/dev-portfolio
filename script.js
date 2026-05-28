@@ -490,14 +490,16 @@ const featuredProjectTitles = [
     "ByteFolio",
     "Nucamp - Web Application",
     "Church Directory",
-    "Weather Now"
+    "Weather Now",
+    "Sales Reports",
+    "Sushi",
+    "Bento Grid",
+    "ZPresent | Apparel Brand"
 ];
 
 const priorityProjectTitles = [
     "Data Generator",
-    "Pomodoro",
-    "Bento Grid",
-    "Sales Reports"
+    "Pomodoro"
 ];
 
 const earlyWorkProjectTitles = [
@@ -515,8 +517,7 @@ const earlyWorkProjectTitles = [
     "Bookmark Manager",
     "Personal Blog",
     "Wallet Card",
-    "Web Capture",
-    "Word Counter"
+    "Web Capture"
 ];
 
 const featuredProjectRank = new Map(featuredProjectTitles.map((title, index) => [title, index]));
