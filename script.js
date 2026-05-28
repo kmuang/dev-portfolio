@@ -526,6 +526,7 @@ const earlyWorkProjectRank = new Map(earlyWorkProjectTitles.map((title, index) =
 projects.forEach((project, index) => {
     project.originalIndex = index;
     project.featured = featuredProjectRank.has(project.title);
+    project.featuredRank = featuredProjectRank.get(project.title);
     project.earlyWork = earlyWorkProjectRank.has(project.title);
 });
 
@@ -573,7 +574,12 @@ function renderProjectCards() {
 
         const card = document.createElement('div');
         const projectSlug = project.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-        card.className = `project-card project-card-${projectSlug}${project.featured ? ' project-card-featured' : ''}`;
+        const layoutClass = project.featuredRank === 0
+            ? ' project-card-hero'
+            : project.featured
+                ? ' project-card-featured-secondary'
+                : '';
+        card.className = `project-card project-card-${projectSlug}${project.featured ? ' project-card-featured' : ''}${layoutClass}`;
         card.dataset.projectIndex = index;
 
         const imageWrap = document.createElement('div');
