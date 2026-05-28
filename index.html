@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FullStack Developer</title>
- <link rel="shortcut icon" href="img/km-logo.jpeg" type="image/jpeg">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/km-logo.jpeg">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/km-logo.jpeg">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/km-logo.jpeg">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/km-logo.jpeg">
+    <meta name="application-name" content="Khup Muang">
+    <meta name="apple-mobile-web-app-title" content="Khup Muang">
+    <meta name="theme-color" content="#151515">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/icon-512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +20,7 @@
     </div>
     <header>
         <a href="#home" class="logo" aria-label="Khup Muang home">
-            <img src="img/km-logo.svg?v=2" alt="" class="logo-mark">
+            <img src="img/km-logo.jpeg" alt="" class="logo-mark">
             <span>Khup Muang</span>
         </a>
         <nav class="header-nav" aria-label="Primary navigation">
@@ -258,7 +260,7 @@
             <div class="contact-info">
                 <span class="contact-badge">Open to projects</span>
                 <h2>Let's build.</h2>
-                <p>Send a quick note and I'll get back to you.</p>
+                <p>Have a role, freelance project, or product idea in mind? Send the details and I'll reply with next steps.</p>
             </div>
 
             <form class="contact-form" id="contactForm" action="https://formspree.io/f/xkoejyon" method="POST">
@@ -272,8 +274,8 @@
                     <textarea id="message" name="message" placeholder="What are we building?" required></textarea>
                 </div>
                 <button type="submit" class="btn-submit">Send Message</button>
-                <div class="success-message" id="successMessage">
-                    ✓ Thank you! Your message has been sent successfully.
+                <div class="form-status" id="formStatus" role="status" aria-live="polite">
+                    Thank you! Your message has been sent successfully.
                 </div>
             </form>
         </div>
