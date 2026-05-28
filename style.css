@@ -1258,6 +1258,24 @@
             .footer-socials {
                 justify-content: flex-start;
             }
+
+            .projects-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .project-card,
+            .project-card-hero,
+            .project-card-featured-secondary {
+                grid-column: auto;
+            }
+
+            .project-card-hero {
+                display: block;
+            }
+
+            .project-card-hero .project-image {
+                margin-bottom: 14px;
+            }
         }
 
         @media (max-width: 900px) {
@@ -1287,17 +1305,9 @@
                 object-position: center 34%;
             }
 
-            .project-card-hero {
-                grid-column: span 2;
-                display: block;
-            }
-
-            .project-card-featured-secondary {
-                grid-column: span 1;
-            }
-
-            .project-card-hero .project-image {
-                margin-bottom: 14px;
+            .projects-section {
+                padding-left: 60px;
+                padding-right: 60px;
             }
         }
 
@@ -1352,23 +1362,31 @@
                 text-align: center;
             }
 
-            .skills-grid,
-            .projects-grid {
+            .skills-grid {
                 grid-template-columns: 1fr;
             }
 
             .projects-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
                 gap: 24px;
             }
 
             .project-card,
             .project-card-hero,
             .project-card-featured-secondary {
-                grid-column: 1;
+                grid-column: auto;
             }
 
             .project-card {
                 padding: 8px;
+            }
+
+            .project-info h3 {
+                font-size: clamp(16px, 3vw, 22px);
+            }
+
+            .project-summary {
+                font-size: 14px;
             }
 
             .contact-container {
@@ -1394,5 +1412,15 @@
             .footer-bottom {
                 flex-direction: column;
                 gap: 10px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-info h3 {
+                font-size: 24px;
             }
         }
