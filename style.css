@@ -308,17 +308,40 @@
 
         .hero-image {
             position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
             animation: fadeInRight 0.45s ease both;
         }
 
         .profile-img {
             width: 100%;
-            max-width: 410px;
+            max-width: 380px;
             height: auto;
             filter: grayscale(100%);
             position: relative;
             z-index: 1;
             border-radius: var(--radius-sm);
+        }
+
+        .hero-media {
+            width: 100%;
+            max-width: 440px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .hero-video {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            filter: saturate(0.9) contrast(1.05);
         }
 
 
@@ -1303,10 +1326,14 @@
             }
 
             .profile-img {
-                max-width: 250px;
+                max-width: 320px;
                 aspect-ratio: 1 / 0.88;
                 object-fit: cover;
                 object-position: center 34%;
+            }
+
+            .hero-media {
+                max-width: 320px;
             }
 
             .projects-section {
@@ -1364,6 +1391,11 @@
                 margin-left: auto;
                 margin-right: auto;
                 text-align: center;
+            }
+
+            .profile-img,
+            .hero-media {
+                max-width: 280px;
             }
 
             .skills-grid {
