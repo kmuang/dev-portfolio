@@ -428,6 +428,86 @@ const projects = [
       "CSS",
       "HTML"
     ]
+  },
+  {
+    "title": "Cart to Go",
+    "image": "https://kmuang.github.io/cart-to-go/assets/image-waffle.jpg",
+    "alt": "Cart to Go project preview",
+    "liveUrl": "https://kmuang.github.io/cart-to-go/",
+    "codeUrl": "https://github.com/kmuang/cart-to-go",
+    "tags": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "title": "Triple Espresso",
+    "image": "https://kmuang.github.io/coffee-shop/images/inside_coffee_shop.png",
+    "alt": "Triple Espresso website preview",
+    "liveUrl": "https://kmuang.github.io/coffee-shop/",
+    "codeUrl": "https://github.com/kmuang/coffee-shop",
+    "tags": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "title": "Contact Form",
+    "image": "https://raw.githubusercontent.com/kmuang/contact-form/main/design/desktop-preview.jpg",
+    "alt": "Contact Form project preview",
+    "liveUrl": "https://kmuang.github.io/contact-form/",
+    "codeUrl": "https://github.com/kmuang/contact-form",
+    "tags": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "title": "Music Player",
+    "image": "https://kmuang.github.io/music-player/img/logo.jpeg",
+    "alt": "Music Player project preview",
+    "liveUrl": "https://kmuang.github.io/music-player/",
+    "codeUrl": "https://github.com/kmuang/music-player",
+    "tags": [
+      "HTML"
+    ]
+  },
+  {
+    "title": "Gallery Reels",
+    "image": "img/reels-preview.png",
+    "alt": "Gallery Reels project preview",
+    "liveUrl": "https://kmuang.github.io/reels/",
+    "codeUrl": "https://github.com/kmuang/reels",
+    "tags": [
+      "JavaScript",
+      "HTML"
+    ]
+  },
+  {
+    "title": "Web 3.0",
+    "image": "img/web3-preview.png",
+    "alt": "Web 3.0 project preview",
+    "liveUrl": "https://kmuang.github.io/web3.0/",
+    "codeUrl": "https://github.com/kmuang/web3.0",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "title": "Register",
+    "image": "img/register-preview.png",
+    "alt": "Register project preview",
+    "liveUrl": "https://kmuang.github.io/register/",
+    "codeUrl": "https://github.com/kmuang/register",
+    "tags": [
+      "JavaScript",
+      "HTML"
+    ]
   }
 ];
 
@@ -469,7 +549,14 @@ const projectDescriptions = {
   "Register/Login Page": "An authentication UI with separate register/login flows, form fields, and a deployed Next.js frontend.",
   "Pomodoro": "A productivity timer with Pomodoro session controls, countdown display, break timing, and a focused interface for managing work intervals.",
   "Nucamp - Web Application": "A Nucamp campsite web app with campsite-style content, card-based browsing, responsive page structure, and deployed frontend routing.",
-  "Sushi": "A restaurant landing page with sushi menu visuals, food branding, and ordering-focused calls to action."
+  "Sushi": "A restaurant landing page with sushi menu visuals, food branding, and ordering-focused calls to action.",
+  "Cart to Go": "A dessert ordering app with product cards, add-to-cart interactions, quantity updates, and an in-browser cart flow for placing an order.",
+  "Triple Espresso": "A refreshed coffee shop landing page for Triple Espresso with recipe sections, table booking, menu browsing, and branded cafe visuals.",
+  "Contact Form": "An accessible contact form with validation states, query selection, keyboard support, and a success message flow after submission.",
+  "Music Player": "A lightweight music player with multiple tracks, simple play and pause controls, and category-based listening sections.",
+  "Gallery Reels": "A reels gallery interface for browsing highlighted videographer clips in a lightweight, scrollable showcase.",
+  "Web 3.0": "A technology news-style landing page focused on Web 3.0, AI, funding trends, and emerging devices through a magazine-inspired editorial layout.",
+  "Register": "A JavaScript-driven register and login interface with account creation, view toggling, and an in-page success state after sign-in."
 };
 
 const projectSummaries = {
