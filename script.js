@@ -723,10 +723,13 @@ function renderProjectCards() {
     });
 
     grid.addEventListener('click', event => {
-        if (event.target.closest('a')) return;
-
         const card = event.target.closest('.project-card');
         if (!card) return;
+
+        const clickedLink = event.target.closest('a');
+        if (clickedLink) {
+            return;
+        }
 
         openModal(Number(card.dataset.projectIndex));
     });
@@ -817,18 +820,26 @@ document.getElementById('contactForm').addEventListener('submit', async function
     }
 });
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
+// Smooth scroll only for actual in-page hash links.
+document.addEventListener('click', function (e) {
+  const anchor = e.target.closest('a[href^="#"]');
+  if (!anchor) return;
+
+  const href = anchor.getAttribute('href');
+  if (!href) return;
+  if (href === '#') {
+    e.preventDefault();
+    return;
+  }
+
+  const target = document.querySelector(href);
+  if (!target) return;
+
+  e.preventDefault();
+  target.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
 });
 
 // Close modal with Escape key
