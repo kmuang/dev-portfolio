@@ -612,6 +612,10 @@
             object-position: top center;
         }
 
+        .project-card-register .project-image img {
+            object-position: 50% 50% !important;
+        }
+
         .project-overlay {
             position: absolute;
             top: 0;
