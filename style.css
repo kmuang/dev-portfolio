@@ -641,10 +641,7 @@
 
         .project-overlay {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            inset: 0;
             background: rgba(0, 0, 0, 0.8);
             display: flex;
             flex-direction: column;
@@ -652,11 +649,15 @@
             justify-content: center;
             gap: 30px;
             opacity: 0;
+            pointer-events: none;
+            z-index: 2;
             transition: opacity 0.3s ease;
         }
 
-        .project-card:hover .project-overlay {
+        .project-card:hover .project-overlay,
+        .project-card:focus-within .project-overlay {
             opacity: 1;
+            pointer-events: auto;
         }
 
         .btn-view {
@@ -669,6 +670,9 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             transition: color 0.3s ease;
+            position: relative;
+            z-index: 3;
+            pointer-events: auto;
         }
 
         .btn-view:hover {
