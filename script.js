@@ -468,7 +468,7 @@ const projects = [
     "title": "Music Player",
     "image": "https://kmuang.github.io/music-player/img/logo.jpeg",
     "alt": "Music Player project preview",
-    "liveUrl": "https://kmuang.github.io/music-player/",
+    "liveUrl": "https://resonant-praline-3c7d7a.netlify.app/",
     "codeUrl": "https://github.com/kmuang/music-player",
     "tags": [
       "HTML"
