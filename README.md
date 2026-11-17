@@ -7,7 +7,3 @@ A responsive portfolio showcasing selected projects, technologies, and contact i
 ![Portfolio home page](screenshots/home.png)
 
 Open [index.html](index.html) in a browser to view the portfolio locally.
-
-## Contact
-
-Explore the portfolio's contact section by opening [index.html](index.html) and choosing **Contact** from the navigation.
