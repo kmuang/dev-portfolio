@@ -75,14 +75,15 @@ const projects = [
     ]
   },
   {
-    "title": "Native Coffee",
-    "image": "img/java-coffee.jpg?v=2",
-    "alt": "Native Coffee project preview",
-    "liveUrl": "https://native-coffee.netlify.app/",
-    "codeUrl": "https://github.com/kmuang/native-coffee",
+    "title": "Zomi Catholic",
+    "image": "img/zomi-catholic.jpg?v=1",
+    "alt": "Zomi Catholic project preview",
+    "liveUrl": "https://zomi-catholic.vercel.app/",
+    "codeUrl": "https://github.com/kmuang/zomi-catholic",
     "tags": [
-      "TypeScript",
-      "JavaScript"
+      "React",
+      "JavaScript",
+      "CSS"
     ]
   },
   {
@@ -210,7 +211,7 @@ const projectDescriptions = {
   "Global Weather App": "A location-based weather lookup with a forecast-style interface.",
   "Catholic Youth": "A registration site for the Catholic Youth Conference, with the schedule and event details.",
   "To do lists": "A task list for adding, tracking, and organizing to-dos.",
-  "Native Coffee": "A mobile coffee app for browsing cafe drinks.",
+  "Zomi Catholic": "A digital Zomi Catholic hymnal with searchable hymns and a clean reading experience.",
   "Inventory Management": "An inventory page for reviewing products and stock details.",
   "KhupCommerce": "A sales dashboard for reviewing commerce metrics and reports.",
   "ZPresent | Apparel Brand": "An apparel storefront with product sections and shopping links.",
@@ -231,7 +232,7 @@ const projectSummaries = {
   "Global Weather App": "Location-based weather lookup with a forecast-style interface.",
   "Catholic Youth": "Registration site for the Catholic Youth Conference with schedule and event details.",
   "To do lists": "Task list for adding, tracking, and organizing to-dos.",
-  "Native Coffee": "Mobile coffee app for browsing cafe drinks and menus.",
+  "Zomi Catholic": "Digital Zomi Catholic hymnal with searchable hymns and a clean reading interface.",
   "Inventory Management": "Inventory page for reviewing products and stock details.",
   "KhupCommerce": "Commerce dashboard for sales and business metrics.",
   "ZPresent | Apparel Brand": "Apparel storefront with product sections and shopping links.",
